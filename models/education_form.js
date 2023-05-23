@@ -4,8 +4,8 @@ const education_form = new Schema({ // Форма обучения (Дневна
   title: String,
   slug: String,
   status: {
-    type: Number,
-    default: 0
+    type: Boolean,
+    default: false
   },
   languages: [{
     language: {

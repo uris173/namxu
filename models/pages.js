@@ -5,10 +5,14 @@ const page = new Schema({
   slug: String,
   file: String,
   content: String, // текст редактор контент (хтмл теги)
-  page_type: String, // тип страницы (Обычный, FAQ, Прием стиль)
-  status: {
+  page_type: {
     type: Number,
     default: 0
+    // 0 - Обычный, 1 - FAQ, 2 - Прием стиль
+  }, // тип страницы (Обычный, FAQ, Прием стиль)
+  status: {
+    type: Boolean,
+    default: false
   },
   languages: [{
     language: {

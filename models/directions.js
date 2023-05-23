@@ -17,8 +17,8 @@ const directions = new Schema({ // направление
   short_content: String, // короткое ознакомление с направлением (хтмл теги)
   possibilities: String, // возможности направления (хтмл теги)
   status: {
-    type: Number,
-    default: 0
+    type: Boolean,
+    default: false
   },
   languages: [{
     language: {
